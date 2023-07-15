@@ -2,6 +2,7 @@ FROM php:8.1-fpm-alpine
 
 # Install production dependencies
 RUN apk add --no-cache --update \
+      linux-headers \
       acl \
       git \
       icu-libs \
